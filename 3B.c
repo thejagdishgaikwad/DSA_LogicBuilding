@@ -5,9 +5,10 @@ int main(){
     int i;
     printf("Enter the Size of Array! : ");
     scanf("%d", &n);
-        printf("Enter the elements of an array : \n");
-            for(i=0; i<n; i++)
+            for(i=0; i<n; i++){
+                printf("Enter the elements of an array : ");
                 scanf("%d", &a[i]);
+            }
                 selection_sort();
             printf("\n \n Elements after Sorting : ");
                 for(i=0; i<n; i++)
