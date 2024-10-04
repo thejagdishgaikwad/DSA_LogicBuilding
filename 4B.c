@@ -9,7 +9,7 @@ int main(){
             scanf("%d", &data);
             for(i=0; i<n; i++){
                 if(a[i]==data){
-                    printf(" The Element Is Present At Position No : %d", i);
+                    printf(" The Element Is Present At %d Position!", i);
                     found=1;
 
                 }
