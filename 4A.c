@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-void merge(int a[], int temp[], int l_pos, int r_pos, int r_end) {
+int merge(int a[], int temp[], int l_pos, int r_pos, int r_end) {
     int i, l_end, n, tmp_pos;
     l_end = r_pos - 1;
     tmp_pos = l_pos;
@@ -23,7 +23,7 @@ void merge(int a[], int temp[], int l_pos, int r_pos, int r_end) {
         a[r_end] = temp[r_end];
     }
 }
-void Msort(int a[], int temp[], int left, int right) {
+int Msort(int a[], int temp[], int left, int right) {
     int center;
     if (left < right) {
         center = (left + right) / 2;
@@ -32,7 +32,7 @@ void Msort(int a[], int temp[], int left, int right) {
         merge(a, temp, left, center + 1, right);
     }
 }
-void mergeSort(int a[], int n) {
+int mergeSort(int a[], int n) {
     int *temparray;
     temparray = (int *)malloc(sizeof(int) * n);
     if (temparray != NULL) {
